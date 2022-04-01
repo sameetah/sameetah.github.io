@@ -2,46 +2,212 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="projects.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Guide to healthy life</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor - v4.7.0
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script>  
+    function calculateBMI(weight, height) {
+      var height_in_meter = height / 100;
+      var bmiValues = Math.round(weight / (height_in_meter * height_in_meter));
+      let weight_category = "";
+      if (bmiValues < 18) {
+        weight_category = "Under Weight";
+      } else if (bmiValues >= 18 && bmiValues < 25){
+        weight_category = "Normal";
+      } else if (bmiValues >= 25 && bmiValues < 30) {
+        weight_category = "Over Weight";
+      } else if (bmiValues >= 30){
+        weight_category = "Obese";
+      } 
+      document.getElementById("bmi").innerHTML = "Your BMI value is: " + bmiValues + ". Your weight is in category: " + weight_category;
+    };
+    function resetFields() {
+      document.getElementById("bmi").innerHTML = "";
+      document.getElementById("fheight").value = "";
+      document.getElementById("fweight").value = "";
+    };
+  </script>  
 </head>
 
 <body>
 
-    <nav id="navbar">
-        <a href="#welcome-section">About me</a>
-        <a href="#projects">Work</a>
 
+  <div class="contentss">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
 
-    </nav>
+      <h1 class="logo me-auto">View</h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-    <div id="welcome-section">
-        <h1>Hey I am sameetah</h1>
-        <h2>A mother of two, starting on a journey to become a Full Stack Developer</h2>
-        <h2>Below are some of my Projects</h2>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li class="navigationmenu"><a class="active" href="index.html">Home</a></li>
+          <li class="navigationmenu"><a href="nutrition.html">Nutrition</a></li>
+          <li class="navigationmenu"><a href="fitness.html">Fitness</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+     
+
     </div>
+  </header><!-- End Header -->
 
+  <!-- ======= theme Section ======= -->
+  <section id="theme" class="home content d-flex justify-content-center align-items-center">
+    <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1  container position-relative" data-aos="zoom-in" data-aos-delay="100">
+      <h2 style="font-weight: bold;  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+      font-size: 26px; color: #b006ff">"Every human being is the author of his own health or disease"<br>Buddha</h2>
 
+     
+    </div>
+  </section><!-- End theme -->
 
+  <main id="main">
 
-    <section id="projects">
-
-
-
-        <div class="project-tile">
-
-            <a id="profile-link" href="techdoc.html"> <button> </button></a>
-            <h2>Technical Documentation Page</h2>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Importance of health in human life</h3>
+            <p>
+              Health, according to the World Health Organization, is "a state of complete physical, mental and social well-being and not merely 
+              the absence of disease and infirmity". A variety of definitions have been used for different purposes over time. Health can be 
+              promoted by encouraging healthful activities, such as regular physical exercise and adequate sleep, and by reducing or avoiding 
+              unhealthful activities or situations, such as smoking or excessive stress. Some factors affecting health are due to individual choices, 
+              such as whether to engage in a high-risk behavior, while others are due to structural causes, such as whether the society is arranged 
+              in a way that makes it easier or harder for people to get necessary healthcare services. Still other factors are beyond both individual 
+              and group choices, such as genetic disorders. 
+            </p>
+            <p>Following are some of the reasons why it is important to stay healthy:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> It increases your life span</li>
+              <li><i class="bi bi-check-circle"></i> You are generally in happy state of mind which makes you feel confident</li>
+              <li><i class="bi bi-check-circle"></i> Less medical bills mean you pay less for staying healthy</li>
+              <li><i class="bi bi-check-circle"></i> When you are happy and confident from inside then you are more able to help and support your loved ones during their tough times</li>
+              <li><i class="bi bi-check-circle"></i> Healthy body and mind are biggest sources of creative ideas</li>
+            </ul>
+            <p>
+              Above list is not extensive. It rather gives an idea to us why staying healthy should be among our top priorities. 
+            <br></p>
+          </div>
         </div>
-        <div class="project-tile">
-            <a id="second-link" href="product_landing_page.html"> <button> </button></a>
-            <h2>Product Landing Page</h2>
+        <div class="flexibleorder">
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h4>How do someone know if he is healthy</h4>
+            <p>
+              There are no 100% accurate ways with which we can measure our health. Although some conditions are crystal clear which indicate we are not healthy, e.g. when we are sick, have 
+              a chronic illness or any kind of visible physical disability. But too often, there are hidden conditions which are hard to spot. So if we want to start assessing our health state
+              then we can start with calculation our Body-Mass-Index (BMI) value. The value tells us if our weight is in healthy range given our gender and height.
+            </p>
+            <form>
+              <label for="weight">Weight (in kg): </label>
+              <input type="text" pattern="\d*" id="weight" name="weight" required title="Please provide only a number"><br><br>
+              <label for="height">Height (in cm):</label>
+              <input type="text" pattern="\d*" id="height" name="height" required title="Please provide only a number"><br><br>
+              <input type="button" value="Calculte BMI" onclick="calculateBMI(document.getElementById('weight').value, document.getElementById('height').value)">
+              <input type="button" value="Reset Fields" onclick="resetFields()">
+            </form>
+            <p id="bmi"></p>
+            <p><br><br></p>
 
+          </div>
         </div>
-    </section>
+
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Influence of life style on human health</h3>
+            <p>
+              Our life style plays an important role in shapping up our health. Be it food choices, being affected by life events or amount of exercise we do, we are shapping up our health on daily 
+              basis throug our life style. That is why it is important to give consideration to the fact that being in healthy state should be our priority and we should delibrately make the effort 
+              to adapt to the healthy life style.  
+            </p>
+            <p>Below are some of the habits we can adopt to remain in the healthy shape and state:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Eating healthy foods and avoiding junk food</li>
+              <li><i class="bi bi-check-circle"></i> Exercise for at least 150 minutes a week, be it jogging, cycling or anyother form of sport</li>
+              <li><i class="bi bi-check-circle"></i> Avoiding unhealthy behaviors like smoking and excessive drinking</li>
+              <li><i class="bi bi-check-circle"></i> Reducing stress by meditation, socializing with friends and family</li>
+            </ul>
+            <p>
+              Keep on reading the other links in the website to get more information about healthy food choices and active life style.
+            </p>
+
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="image col-lg-2 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/home1.jpg" width="300" height="300"  alt="health1">
+          </div>
+          <div class="image col-lg-2 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/home2.jpg" width="300" height="300"  alt="health2">
+          </div>
+          <div class="image col-lg-2 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/home3.jpg" width="300" height="300"  alt="health3">
+          </div>
+          <div class="video col-lg-12 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          <p>You may watch the following video to inform yourself more about why it is important to adapt a healthy lifestyle: <br><br></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/JNUquiFj8zI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  
+
+  </main><!-- End #main -->
+
+  </div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Capstone</span></strong>. All Rights Reserved
+        </div>
+
+        
+  
+  </footer><!-- End Footer -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
