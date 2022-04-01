@@ -1,0 +1,64 @@
+#header-img {display: flex; 
+    width: 300px;  
+  height: auto;
+  padding: 15px;  
+   }
+  h1{ text-align:center;
+    font-size: 30px;
+    
+    }
+  @media (min-height: 1200px){
+    h1{
+    font-size: 10px;}
+  }
+  #header{ display:flex;
+    justify-content: space-between;
+      align-items: center;
+  }
+  
+  #nav-bar{ display :flex;
+    position: fixed;
+    left: 1500px;
+    font-size: 20px;
+  margin 15 0 0 auto;}
+  #email{
+   
+  display: block;
+    margin:  0 auto;
+    background-color: lightblue;
+  }
+  
+  .container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+     
+     
+  }
+  #info{display: grid;
+   justify-content: center;
+    align-items: center;
+    padding: 100px;
+   }
+  #vid{
+   display: flex;
+  justify-content: center;
+    padding: 20px;
+    
+    }
+  #box-container div{
+    height: 200px;
+    width: 300px;
+    text-align: center;
+  border: 1px solid black;
+    display: inline-block;
+    margin:10px;
+    border: 10px solid #264653;
+    
+  }
+   
+  .th{background-color: Gray;}
+  
+  
